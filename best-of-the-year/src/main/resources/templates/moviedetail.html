@@ -2,15 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Best of the year</title>
+    <title>Movie Detail</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Best of the year by <span th:text="${user.name}"></span></h1>
-        <a th:href="@{/movies}" class="btn btn-primary">Movies</a>
-        <a th:href="@{/songs}" class="btn btn-primary">Songs</a>
+        <h1 th:text="${movie.titolo}"></h1>
+        <a href="/movies" class="btn btn-secondary">Back to Movies</a>
     </div>
 </body>
 
